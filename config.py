@@ -1,5 +1,5 @@
-name='tkitDemo'#修改包名字-
-version='0.0.0.2 '
+name='tkitAttNLocal'#修改包名字-
+version='0.0.0.1 '
 description='Terry toolkit tkitDemo'
 author='Terry Chan'
 author_email='napoler2008@gmail.com'

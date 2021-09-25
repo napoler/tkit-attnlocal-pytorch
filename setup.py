@@ -3,10 +3,28 @@ from setuptools import find_packages, setup
 from os import path as os_path
 import time
 
-from config import *
+# from config import *
+
+
+
+
+name='tkitAttNLocal'#修改包名字-
+version='0.0.0.2'+str(time.time())[:8]
+description='Terry toolkit tkitAttNLocal,'
+author='Terry Chan'
+author_email='napoler2008@gmail.com'
+url='https://www.terrychan.org/'
+
+copyright = '2021, Terry Chan'
+language = 'zh_cn'
+
+
+
+
+
+
 this_directory = os_path.abspath(os_path.dirname(__file__))
 """帮助[https://www.notion.so/6bade2c6a5f4479f82a4e67eafcebb3a]
-
 上传到anaconda
 https://docs.anaconda.com/anacondaorg/user-guide/tasks/work-with-packages/
  
@@ -30,8 +48,10 @@ def read_requirements(filename):
 
 
 
-
-long_description=read_file("README.md")
+try:
+    long_description=read_file("README.md")
+except:
+    long_description=""
 setup(
     name=name, #修改包名字-
     version=version,
@@ -39,19 +59,22 @@ setup(
     author=author,
     author_email=author_email,
     url=url,
-    install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
+    # install_requires=read_requirements('requirements_seg.txt'),  # 指定需要安装的依赖
     long_description=long_description,
     long_description_content_type="text/markdown",
-    # install_requires=[
-    #     # 'beautifulsoup4==4.7.1',
+    install_requires=[
+        # 'numpy>=1.21.2',
+        # 'onnx>=1.10.1',
+        # 'onnxruntime>=1.9.0',
+        # 'transformers>=4.10.3',
 
-
-    # ],
-    packages=['Demo'])
+    ],
+    packages=['tkitAttNLocal'],
+    include_package_data=True,  # 打包包含静态文件标识
+    )
 
 """
 pip freeze > requirements.txt
-
 python3 setup.py sdist
 #python3 setup.py install
 python3 setup.py sdist upload
