@@ -9,7 +9,7 @@ import time
 
 
 name='tkitAttNLocal'#修改包名字-
-version='0.0.0.2'+str(time.time())[:8]
+version='0.0.0.3'+str(time.time())[:8]
 description='Terry toolkit tkitAttNLocal,'
 author='Terry Chan'
 author_email='napoler2008@gmail.com'
@@ -63,7 +63,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=[
-        # 'numpy>=1.21.2',
+        'pytorch_lightning >=1.4.0',
         # 'onnx>=1.10.1',
         # 'onnxruntime>=1.9.0',
         # 'transformers>=4.10.3',
