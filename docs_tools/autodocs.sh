@@ -36,9 +36,14 @@ sphinx-build -b html ./source ../docs
 
 cp ./.nojekyll ../docs
 
-# 推送命令
-cd ../
-git add .
-git commit -m "auto更新文档"
-git pull
-git push
+
+pwd
+
+ls ../docs
+
+# # 推送命令
+# cd ../
+# git add .
+# git commit -m "auto更新文档"
+# git pull
+# git push
