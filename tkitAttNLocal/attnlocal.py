@@ -2,6 +2,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
+import pytorch_lightning as pl
 
 class AttNLocal(nn.Module):
     """
@@ -38,7 +39,7 @@ class AttNLocal(nn.Module):
         # torch.where(mask>0,x,mask)
         # 构建填充
         pad = torch.zeros(B, L, self.limit)
-        xplus = torch.cat((x, pad), dim=-1)
+        xplus = torch.cat((x, pad.to(self.device)), dim=-1)
         active_loss = mask.view(-1) == 1
         # print(xplus.size())
         xplus_out = xplus.view(-1)[active_loss].view(B, L, -1)
