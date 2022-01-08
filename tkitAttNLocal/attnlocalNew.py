@@ -5,7 +5,7 @@ import torch.nn as nn
 
 # import pytorch_lightning as pl
 
-class AttNLocal(nn.Module):
+class AttNLocalNew(nn.Module):
     """
     自动限制矩阵
 
