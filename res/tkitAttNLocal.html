@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tkitAttNLocal package &mdash; tkitAttNLocal 0.0.0.1  文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="tkitAttNLocal" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> tkitAttNLocal
+          </a>
+              <div class="version">
+                0.0.0.1 
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Main">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tkitAttNLocal</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tkitAttNLocal package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tkitAttNLocal.attnlocal">tkitAttNLocal.attnlocal module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tkitAttNLocal.attnlocalNew">tkitAttNLocal.attnlocalNew module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-tkitAttNLocal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="Top" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">tkitAttNLocal</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+<div role="navigation" aria-label="Breadcrumbs">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tkitAttNLocal</a> &raquo;</li>
+      <li>tkitAttNLocal package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/res/tkitAttNLocal.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="tkitattnlocal-package">
+<h1>tkitAttNLocal package<a class="headerlink" href="#tkitattnlocal-package" title="永久链接至标题"></a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题"></a></h2>
+</div>
+<div class="section" id="module-tkitAttNLocal.attnlocal">
+<span id="tkitattnlocal-attnlocal-module"></span><h2>tkitAttNLocal.attnlocal module<a class="headerlink" href="#module-tkitAttNLocal.attnlocal" title="永久链接至标题"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocal.AttNLocal">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tkitAttNLocal.attnlocal.</span></span><span class="sig-name descname"><span class="pre">AttNLocal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maxlen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tkitAttNLocal/attnlocal.html#AttNLocal"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#tkitAttNLocal.attnlocal.AttNLocal" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>自动限制矩阵</p>
+<p>实现斜对角线保留</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocal.AttNLocal.autoBulidlMaskLimit">
+<span class="sig-name descname"><span class="pre">autoBulidlMaskLimit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tkitAttNLocal/attnlocal.html#AttNLocal.autoBulidlMaskLimit"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#tkitAttNLocal.attnlocal.AttNLocal.autoBulidlMaskLimit" title="永久链接至目标"></a></dt>
+<dd><p>构建一个矩阵
+自动限制 预测长度</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocal.AttNLocal.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tkitAttNLocal/attnlocal.html#AttNLocal.forward"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#tkitAttNLocal.attnlocal.AttNLocal.forward" title="永久链接至目标"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocal.AttNLocal.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#tkitAttNLocal.attnlocal.AttNLocal.training" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tkitAttNLocal.attnlocalNew">
+<span id="tkitattnlocal-attnlocalnew-module"></span><h2>tkitAttNLocal.attnlocalNew module<a class="headerlink" href="#module-tkitAttNLocal.attnlocalNew" title="永久链接至标题"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocalNew.AttNLocalNew">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tkitAttNLocal.attnlocalNew.</span></span><span class="sig-name descname"><span class="pre">AttNLocalNew</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">maxlen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tkitAttNLocal/attnlocalNew.html#AttNLocalNew"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#tkitAttNLocal.attnlocalNew.AttNLocalNew" title="永久链接至目标"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<p>自动限制矩阵</p>
+<p>实现斜对角线保留权重，其他的设为-inf</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocalNew.AttNLocalNew.forward">
+<span class="sig-name descname"><span class="pre">forward</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/tkitAttNLocal/attnlocalNew.html#AttNLocalNew.forward"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#tkitAttNLocal.attnlocalNew.AttNLocalNew.forward" title="永久链接至目标"></a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tkitAttNLocal.attnlocalNew.AttNLocalNew.training">
+<span class="sig-name descname"><span class="pre">training</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#tkitAttNLocal.attnlocalNew.AttNLocalNew.training" title="永久链接至目标"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-tkitAttNLocal">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-tkitAttNLocal" title="永久链接至标题"></a></h2>
+</div>
+</div>
+
+
+           </div>
+
+
+           <div id="lv-container" data-id="city" data-uid="MTAyMC80OTg1OS8yNjM1MA==">
+            <script type="4097e126b712b9dab1f8fc00-text/javascript">
+                 (function(d, s) {
+                     var j, e = d.getElementsByTagName(s)[0];
+              
+                     if (typeof LivereTower === 'function') { return; }
+              
+                     j = d.createElement(s);
+                     j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                     j.async = true;
+              
+                     e.parentNode.insertBefore(j, e);
+                 })(document, 'script');
+              </script>
+            <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>        
+
+            
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="tkitAttNLocal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2021, Terry Chan.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

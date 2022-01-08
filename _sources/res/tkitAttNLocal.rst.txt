@@ -1,0 +1,29 @@
+tkitAttNLocal package
+=====================
+
+Submodules
+----------
+
+tkitAttNLocal.attnlocal module
+------------------------------
+
+.. automodule:: tkitAttNLocal.attnlocal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tkitAttNLocal.attnlocalNew module
+---------------------------------
+
+.. automodule:: tkitAttNLocal.attnlocalNew
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: tkitAttNLocal
+   :members:
+   :undoc-members:
+   :show-inheritance:
